@@ -34,7 +34,8 @@ class BasicMathChallenge extends React.Component {
   checkAnswer(ans) {
     const correct = (parseInt(ans) === this.correctAnswer());
     if (correct) {
-      this.setState(this.generateChallenge())
+      this.setState(this.generateChallenge());
+      this.props.onGoodAnswer();
     }
   }
 

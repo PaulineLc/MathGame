@@ -12,6 +12,7 @@ class Timer extends React.Component {
     }));
     if (this.state.timeLeftSeconds <= 0) {
       clearInterval(this.timerID);
+      this.props.onTimeUp();
     }
   }
 
