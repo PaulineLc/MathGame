@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Timer from './Timer';
+import AnswerForm from './AnswerForm';
 import BasicMathChallenge from './BasicMathChallenge';
 
 class App extends Component {
